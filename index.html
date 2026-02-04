@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Nuestra Boda 💍</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- AOS Animations -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./css/style.css">
+ 3
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#hero">V & D</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#hero">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#countdown">Fecha</a></li>
+        <li class="nav-item"><a class="nav-link" href="#rsvp">RSVP</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section id="hero" class="d-flex align-items-center justify-content-center text-center">
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Valeria & Diego</h1>
+    <p class="mt-3 fs-5">Nos casamos</p>
+    <p class="mb-4">14 de Diciembre de 2026</p>
+    <a href="#rsvp" class="btn btn-light btn-custom me-2">💌 Confirmar asistencia</a>
+    <a href="#mapa" class="btn btn-outline-light btn-custom">📍 Ver ubicación</a>
+  </div>
+</section>
+
+<!-- COUNTDOWN -->
+<section id="countdown" class="countdown-box">
+  <div class="container">
+    <h2 class="mb-4" data-aos="fade-up">Falta muy poco ✨</h2>
+    <div class="row justify-content-center countdown" data-aos="fade-up">
+      <div class="col-6 col-md-2">
+        <span id="days">0</span>
+        <small>Días</small>
+      </div>
+      <div class="col-6 col-md-2">
+        <span id="hours">0</span>
+        <small>Horas</small>
+      </div>
+      <div class="col-6 col-md-2">
+        <span id="minutes">0</span>
+        <small>Minutos</small>
+      </div>
+      <div class="col-6 col-md-2">
+        <span id="seconds">0</span>
+        <small>Segundos</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="evento" class="py-5">
+  <div class="container">
+    <div class="row text-center mb-5" data-aos="fade-up">
+      <h2>El gran día</h2>
+      <p class="text-muted">Todo lo que necesitás saber ✨</p>
+    </div>
+
+    <div class="row justify-content-center g-4">
+
+      <!-- CEREMONIA -->
+      <div class="col-md-5" data-aos="fade-right">
+        <div class="card h-100 shadow-sm border-0 p-4 text-center">
+          <h3 class="mb-3">Ceremonia</h3>
+          <p><strong>📍 Lugar:</strong> Iglesia San José</p>
+          <p><strong>🕒 Hora:</strong> 18:00 hs</p>
+          <p><strong>📅 Fecha:</strong> 14 de Diciembre 2026</p>
+          <a href="#mapa" class="btn btn-outline-dark btn-custom mt-3">
+            Ver ubicación
+          </a>
+        </div>
+      </div>
+
+      <!-- RECEPCIÓN -->
+      <div class="col-md-5" data-aos="fade-left">
+        <div class="card h-100 shadow-sm border-0 p-4 text-center">
+          <h3 class="mb-3">Recepción</h3>
+          <p><strong>📍 Lugar:</strong> Estancia La Arboleda</p>
+          <p><strong>🕒 Hora:</strong> 20:30 hs</p>
+          <p><strong>🍽️ Cena y fiesta</strong></p>
+          <a href="#mapa" class="btn btn-outline-dark btn-custom mt-3">
+            Ver ubicación
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="mapa" class="py-5 bg-light">
+  <div class="container">
+    <div class="row text-center mb-4" data-aos="fade-up">
+      <h2>¿Cómo llegar?</h2>
+      <p class="text-muted">Te esperamos 💕</p>
+    </div>
+
+    <div class="row justify-content-center" data-aos="fade-up">
+      <div class="col-md-10">
+        <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden">
+          <iframe 
+            src="https://www.google.com/maps?q=Obelisco,Buenos+Aires&output=embed"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="https://www.google.com/maps?q=Obelisco,Buenos+Aires"
+             target="_blank"
+             class="btn btn-dark btn-custom me-2">
+            Abrir en Google Maps
+          </a>
+
+          <a href="https://waze.com/ul?ll=-34.6037,-58.3816&navigate=yes"
+             target="_blank"
+             class="btn btn-outline-dark btn-custom">
+            Abrir en Waze
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="galeria" class="py-5">
+  <div class="container">
+    <div class="row text-center mb-5" data-aos="fade-up">
+      <h2>Nuestros momentos</h2>
+      <p class="text-muted">Un poquito de nuestra historia 💕</p>
+    </div>
+
+    <div class="row g-3" data-aos="fade-up">
+      <div class="col-6 col-md-4">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+             class="img-fluid galeria-img"
+             onclick="openGallery(this.src)">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+             class="img-fluid galeria-img"
+             onclick="openGallery(this.src)">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="https://images.unsplash.com/photo-1529634899269-8a0b9d8a8c9f"
+             class="img-fluid galeria-img"
+             onclick="openGallery(this.src)">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9"
+             class="img-fluid galeria-img"
+             onclick="openGallery(this.src)">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+             class="img-fluid galeria-img"
+             onclick="openGallery(this.src)">
+      </div>
+      <div class="col-6 col-md-4">
+        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+             class="img-fluid galeria-img"
+             onclick="openGallery(this.src)">
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- RSVP PLACEHOLDER -->
+<section id="rsvp" class="py-5 bg-light">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 text-center" data-aos="fade-up">
+        <h2 class="mb-3">Confirmar asistencia</h2>
+        <p class="text-muted mb-4">
+          Nos encantaría contar con tu presencia 💍
+        </p>
+      </div>
+
+      <div class="col-md-6" data-aos="fade-up">
+        <form id="rsvpForm" class="card p-4 shadow-sm border-0">
+          
+          <div class="mb-3">
+            <input type="text" id="nombre" class="form-control" placeholder="Nombre y Apellido" required>
+          </div>
+
+          <div class="mb-3">
+            <select id="asistencia" class="form-select" required>
+              <option value="">¿Asistís?</option>
+              <option value="si">Sí, ahí estaré 💃</option>
+              <option value="no">No podré asistir 😢</option>
+            </select>
+          </div>
+
+          <div class="mb-3 d-none" id="cantidadBox">
+            <input type="number" id="cantidad" class="form-control" placeholder="Cantidad de personas" min="1">
+          </div>
+
+          <div class="mb-3">
+            <textarea id="mensaje" class="form-control" rows="3" placeholder="Dejanos un mensaje 💌"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-dark w-100 btn-custom">
+            Enviar confirmación
+          </button>
+
+          <p id="rsvpMsg" class="mt-3 text-center fw-semibold"></p>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+
+<audio id="bgMusic" preload="auto" loop playsinline>
+  <source src="./assets/music/tunetank-inspiring-cinematic-music-409347.mp3" type="audio/mpeg">
+</audio>
+<div id="musicControl" onclick="toggleMusic()">
+  🎵
+</div>
+
+<div id="galleryModal" class="gallery-modal">
+  <span class="close-btn" onclick="closeGallery()">×</span>
+  <img id="galleryImg">
+</div>
+
+<script>
+  AOS.init();
+
+  // COUNTDOWN
+  const eventDate = new Date("2026-12-14T18:00:00").getTime();
+
+  setInterval(() => {
+    const now = new Date().getTime();
+    const diff = eventDate - now;
+
+    document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
+    document.getElementById("hours").innerText = Math.floor((diff / (1000 * 60 * 60)) % 24);
+    document.getElementById("minutes").innerText = Math.floor((diff / (1000 * 60)) % 60);
+    document.getElementById("seconds").innerText = Math.floor((diff / 1000) % 60);
+  }, 1000);
+</script>
+
+<script>
+  const asistencia = document.getElementById("asistencia");
+  const cantidadBox = document.getElementById("cantidadBox");
+
+  asistencia.addEventListener("change", () => {
+    if (asistencia.value === "si") {
+      cantidadBox.classList.remove("d-none");
+    } else {
+      cantidadBox.classList.add("d-none");
+    }
+  });
+</script>
+
+<script type="module">
+  // 🔥 Firebase
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-app.js";
+  import { getFirestore, collection, addDoc, Timestamp } from "https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore.js";
+
+  const firebaseConfig = {
+    apiKey: "TU_API_KEY",
+    authDomain: "TU_PROYECTO.firebaseapp.com",
+    projectId: "TU_PROYECTO",
+    storageBucket: "TU_PROYECTO.appspot.com",
+    messagingSenderId: "XXX",
+    appId: "XXX"
+  };
+
+  const app = initializeApp(firebaseConfig);
+  const db = getFirestore(app);
+
+  // RSVP submit
+  document.getElementById("rsvpForm").addEventListener("submit", async (e) => {
+    e.preventDefault();
+
+    const data = {
+      nombre: nombre.value,
+      asistencia: asistencia.value,
+      cantidad: cantidad.value || 0,
+      mensaje: mensaje.value,
+      fecha: Timestamp.now()
+    };
+
+    try {
+      await addDoc(collection(db, "rsvp"), data);
+      document.getElementById("rsvpMsg").innerText = "💖 ¡Gracias por confirmar!";
+      e.target.reset();
+      cantidadBox.classList.add("d-none");
+    } catch (error) {
+      document.getElementById("rsvpMsg").innerText = "⚠️ Ocurrió un error. Intentá nuevamente.";
+    }
+  });
+</script>
+
+<script>
+  function openGallery(src) {
+    document.getElementById("galleryImg").src = src;
+    document.getElementById("galleryModal").style.display = "flex";
+  }
+
+  function closeGallery() {
+    document.getElementById("galleryModal").style.display = "none";
+  }
+</script>
+
+
+<script>
+  const music = document.getElementById("bgMusic");
+  const control = document.getElementById("musicControl");
+  let isPlaying = false;
+  let fadeInterval;
+
+  function fadeIn() {
+    clearInterval(fadeInterval);
+    music.volume = 0;
+    fadeInterval = setInterval(() => {
+      if (music.volume < 0.6) {
+        music.volume += 0.05;
+      } else {
+        clearInterval(fadeInterval);
+      }
+    }, 100);
+  }
+
+  function fadeOut() {
+    clearInterval(fadeInterval);
+    fadeInterval = setInterval(() => {
+      if (music.volume > 0.05) {
+        music.volume -= 0.05;
+      } else {
+        music.pause();
+        music.volume = 0.6;
+        clearInterval(fadeInterval);
+      }
+    }, 100);
+  }
+
+  function toggleMusic() {
+    if (!isPlaying) {
+      localStorage.setItem("music", "on");
+      music.play().then(() => {
+        fadeIn();
+        isPlaying = true;
+        control.classList.add("playing");
+      });
+    } else {
+      localStorage.setItem("music", "off");
+      fadeOut();
+      isPlaying = false;
+      control.classList.remove("playing");
+    }
+  }
+    document.addEventListener("visibilitychange", () => {
+    if (document.hidden && isPlaying) {
+      music.pause();
+    }
+  });
+
+</script>
+
+
+
+
+
+</body>
+</html>
