@@ -44,23 +44,36 @@
     }
 
     /* COUNTDOWN */
-    .countdown-box {
-      background: #f8f5f2;
-      padding: 60px 0;
-      text-align: center;
-    }
+   #countdown {
+  background: linear-gradient(135deg, #f7f7f7, #ffffff);
+}
 
-    .countdown span {
-      font-size: 2.5rem;
-      font-weight: bold;
-      display: block;
-    }
+.count-box {
+  background: white;
+  border-radius: 16px;
+  padding: 25px 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,.08);
+  transition: transform .3s ease;
+}
 
-    .countdown small {
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      color: #777;
-    }
+.count-box:hover {
+  transform: translateY(-6px);
+}
+
+.count-box span {
+  font-size: 2.5rem;
+  font-weight: 700;
+  display: block;
+}
+
+.count-box small {
+  font-size: .9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #777;
+}
+
+
 .galeria-img {
   border-radius: 12px;
   cursor: pointer;
@@ -152,4 +165,62 @@
   0% { transform: scale(1); }
   50% { transform: scale(1.08); }
   100% { transform: scale(1); }
+}
+
+
+#dresscode {
+  background: #fff;
+}
+
+#dresscode .card {
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+
+#dresscode .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,.1);
+}
+
+#regalos .card {
+  border-radius: 20px;
+  background: linear-gradient(135deg, #fff, #f8f5f2);
+}
+/* .copy-surprise {
+  display: none;
+  margin-top: 15px;
+  padding: 12px 18px;
+  border-radius: 20px;
+  background: #fff0f5;
+  color: #b03060;
+  font-weight: 600;
+  animation: popUp 0.6s ease;
+}
+ */
+ .copy-surprise {
+  position: fixed;
+  top: 90px;              /* altura desde arriba */
+  /* left: 50%;
+  transform: translateX(-50%); */
+  z-index: 9999;
+
+  display: none;
+  padding: 14px 22px;
+  border-radius: 30px;
+  background: #fff0f5;
+  color: #b03060;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+
+  animation: popUp 0.6s ease;
+}
+
+@keyframes popUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
 }

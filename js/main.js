@@ -1,21 +1,35 @@
   AOS.init();
 
   // COUNTDOWN
-  const eventDate = new Date("2026-12-14T18:00:00").getTime();
+  const weddingDate = new Date("December 14, 2026 18:00:00").getTime();
 
-  setInterval(() => {
+  const countdown = setInterval(() => {
     const now = new Date().getTime();
-    const diff = eventDate - now;
+    const distance = weddingDate - now;
 
-    document.getElementById("days").innerText = Math.floor(diff / (1000 * 60 * 60 * 24));
-    document.getElementById("hours").innerText = Math.floor((diff / (1000 * 60 * 60)) % 24);
-    document.getElementById("minutes").innerText = Math.floor((diff / (1000 * 60)) % 60);
-    document.getElementById("seconds").innerText = Math.floor((diff / 1000) % 60);
+    if (distance < 0) {
+      clearInterval(countdown);
+      document.getElementById("countdown").innerHTML =
+        "<h2>¡Hoy es el gran día! 💍✨</h2>";
+      return;
+    }
+
+    document.getElementById("days").innerText =
+      Math.floor(distance / (1000 * 60 * 60 * 24));
+
+    document.getElementById("hours").innerText =
+      Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+    document.getElementById("minutes").innerText =
+      Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+
+    document.getElementById("seconds").innerText =
+      Math.floor((distance % (1000 * 60)) / 1000);
   }, 1000);
 
   
 
-  const asistencia = document.getElementById("asistencia");
+  const asistencia = document.getElementById("asistencia"); 
   const cantidadBox = document.getElementById("cantidadBox");
 
   asistencia.addEventListener("change", () => {
@@ -90,3 +104,15 @@
     }
   });
 
+
+function copiarAlias() {
+  const alias = document.getElementById("alias").innerText;
+  navigator.clipboard.writeText(alias);
+
+  const msg = document.getElementById("copyMsg");
+  msg.style.display = "block";
+
+  setTimeout(() => {
+    msg.style.display = "none";
+  }, 5000);
+}

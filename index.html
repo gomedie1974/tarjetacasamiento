@@ -48,29 +48,103 @@
 </section>
 
 <!-- COUNTDOWN -->
-<section id="countdown" class="countdown-box">
+ 
+<section id="countdown" class="py-5 text-center">
   <div class="container">
-    <h2 class="mb-4" data-aos="fade-up">Falta muy poco ✨</h2>
-    <div class="row justify-content-center countdown" data-aos="fade-up">
-      <div class="col-6 col-md-2">
-        <span id="days">0</span>
-        <small>Días</small>
+
+    <div class="row mb-4" data-aos="fade-up">
+      <h2 class="fw-bold">Falta muy poco</h2>
+      <p class="text-muted">Para celebrar juntos 💕</p>
+    </div>
+
+    <div class="row justify-content-center g-3" data-aos="zoom-in">
+
+      <div class="col-6 col-md-3">
+        <div class="count-box">
+          <span id="days">00</span>
+          <small>Días</small>
+        </div>
       </div>
-      <div class="col-6 col-md-2">
-        <span id="hours">0</span>
-        <small>Horas</small>
+
+      <div class="col-6 col-md-3">
+        <div class="count-box">
+          <span id="hours">00</span>
+          <small>Horas</small>
+        </div>
       </div>
-      <div class="col-6 col-md-2">
-        <span id="minutes">0</span>
-        <small>Minutos</small>
+
+      <div class="col-6 col-md-3">
+        <div class="count-box">
+          <span id="minutes">00</span>
+          <small>Minutos</small>
+        </div>
       </div>
-      <div class="col-6 col-md-2">
-        <span id="seconds">0</span>
-        <small>Segundos</small>
+
+      <div class="col-6 col-md-3">
+        <div class="count-box">
+          <span id="seconds">00</span>
+          <small>Segundos</small>
+        </div>
       </div>
+
     </div>
   </div>
 </section>
+
+<section id="dresscode" class="py-5">
+  <div class="container">
+
+    <div class="row text-center mb-5" data-aos="fade-up">
+      <h2 class="fw-bold">Dress Code</h2>
+      <p class="text-muted">Elegante – Formal ✨</p>
+    </div>
+
+    <div class="row justify-content-center g-4">
+
+      <!-- MUJER -->
+      <div class="col-md-4" data-aos="fade-right">
+        <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4">
+          <div class="display-4 mb-3">👗</div>
+          <h5 class="fw-bold">Ellas</h5>
+          <p class="mb-1">Vestido largo o midi</p>
+          <p class="mb-1">Colores suaves o pasteles</p>
+          <p class="text-muted mt-2">
+            Sugerimos llevar abrigo liviano para la noche 🌙
+          </p>
+        </div>
+      </div>
+
+      <!-- HOMBRE -->
+      <div class="col-md-4" data-aos="fade-left">
+        <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4">
+          <div class="display-4 mb-3">🤵</div>
+          <h5 class="fw-bold">Ellos</h5>
+          <p class="mb-1">Traje formal</p>
+          <p class="mb-1">Camisa clara</p>
+          <p class="text-muted mt-2">
+            Saco recomendado por descenso de temperatura 🌬️
+          </p>
+        </div>
+      </div>
+
+      <!-- CLIMA -->
+      <div class="col-md-4" data-aos="zoom-in">
+        <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4">
+          <div class="display-4 mb-3">🌤️</div>
+          <h5 class="fw-bold">Clima estimado</h5>
+          <p class="mb-1">Diciembre – Verano</p>
+          <p class="mb-1">Ceremonia al atardecer</p>
+          <p class="text-muted mt-2">
+            Calor durante el día, fresco por la noche
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 <section id="evento" class="py-5 position-relative">
   <div class="container">
 
@@ -287,6 +361,44 @@
     </div>
   </div>
 </section>
+
+<section id="regalos" class="py-5">
+  <div class="container">
+    <div class="row justify-content-center text-center mb-4" data-aos="fade-up">
+      <h2>🎁 Regalos</h2>
+      <p class="text-muted">
+        Tu presencia es lo más importante 💕<br>
+        Si deseás hacernos un regalo, podés ayudarnos con nuestro nuevo comienzo.
+      </p>
+    </div>
+
+    <div class="row justify-content-center" data-aos="fade-up">
+      <div class="col-md-6">
+        <div class="card shadow-sm border-0 p-4 text-center">
+
+          <p class="fw-semibold mb-2">Alias para transferencias</p>
+
+          <div class="d-flex align-items-center justify-content-between bg-light rounded px-3 py-2 mb-3">
+            <span id="alias" class="fw-bold">VALERIA.DIEGO.BODA</span>
+            <button class="btn btn-sm btn-outline-dark" onclick="copiarAlias()">
+              Copiar
+            </button>
+          </div>
+
+          <small class="text-muted">
+            Banco · Cuenta · Mercado Pago
+          </small>
+
+          <div id="copyMsg" class="copy-surprise">
+            💖 ¡Gracias por acompañarnos en este momento tan especial!
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
 <!-- JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
