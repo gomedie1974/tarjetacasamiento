@@ -53,56 +53,22 @@
 
 
 
-  const music = document.getElementById("bgMusic");
-  const control = document.getElementById("musicControl");
-  let isPlaying = false;
-  let fadeInterval;
 
-  function fadeIn() {
-    clearInterval(fadeInterval);
-    music.volume = 0;
-    fadeInterval = setInterval(() => {
-      if (music.volume < 0.6) {
-        music.volume += 0.05;
-      } else {
-        clearInterval(fadeInterval);
-      }
-    }, 100);
-  }
+const music = document.getElementById("bgMusic");
+const icon = document.getElementById("musicIcon");
+let isPlaying = false;
 
-  function fadeOut() {
-    clearInterval(fadeInterval);
-    fadeInterval = setInterval(() => {
-      if (music.volume > 0.05) {
-        music.volume -= 0.05;
-      } else {
-        music.pause();
-        music.volume = 0.6;
-        clearInterval(fadeInterval);
-      }
-    }, 100);
+function toggleMusic() {
+  if (isPlaying) {
+    music.pause();
+    icon.className = "fa-solid fa-play";
+  } else {
+    music.play();
+    icon.className = "fa-solid fa-pause"; // ← ESTE ES EL ||
   }
+  isPlaying = !isPlaying;
+}
 
-  function toggleMusic() {
-    if (!isPlaying) {
-      localStorage.setItem("music", "on");
-      music.play().then(() => {
-        fadeIn();
-        isPlaying = true;
-        control.classList.add("playing");
-      });
-    } else {
-      localStorage.setItem("music", "off");
-      fadeOut();
-      isPlaying = false;
-      control.classList.remove("playing");
-    }
-  }
-    document.addEventListener("visibilitychange", () => {
-    if (document.hidden && isPlaying) {
-      music.pause();
-    }
-  });
 
 
 function copiarAlias() {

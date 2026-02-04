@@ -9,12 +9,17 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
   <!-- AOS Animations -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
   
   <link rel="stylesheet" href="./css/style.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+`
  
 </head>
 <body>
@@ -93,49 +98,39 @@
 
 <section id="dresscode" class="py-5">
   <div class="container">
-
     <div class="row text-center mb-5" data-aos="fade-up">
-      <h2 class="fw-bold">Dress Code</h2>
-      <p class="text-muted">Elegante – Formal ✨</p>
+      <h2>Dress code</h2>
+      <p class="text-muted">Elegante • cómodo • con estilo</p>
     </div>
 
     <div class="row justify-content-center g-4">
 
-      <!-- MUJER -->
-      <div class="col-md-4" data-aos="fade-right">
-        <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4">
-          <div class="display-4 mb-3">👗</div>
-          <h5 class="fw-bold">Ellas</h5>
-          <p class="mb-1">Vestido largo o midi</p>
-          <p class="mb-1">Colores suaves o pasteles</p>
-          <p class="text-muted mt-2">
-            Sugerimos llevar abrigo liviano para la noche 🌙
+      <div class="col-md-4" data-aos="fade-up">
+        <div class="card h-100 border-0 shadow-sm p-4 text-center">
+          <i class="bi bi-person-check fs-1 mb-3"></i>
+          <h5>Elegante</h5>
+          <p class="text-muted mb-0">
+            Traje, vestido o look formal relajado
           </p>
         </div>
       </div>
 
-      <!-- HOMBRE -->
-      <div class="col-md-4" data-aos="fade-left">
-        <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4">
-          <div class="display-4 mb-3">🤵</div>
-          <h5 class="fw-bold">Ellos</h5>
-          <p class="mb-1">Traje formal</p>
-          <p class="mb-1">Camisa clara</p>
-          <p class="text-muted mt-2">
-            Saco recomendado por descenso de temperatura 🌬️
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="card h-100 border-0 shadow-sm p-4 text-center">
+          <i class="bi bi-thermometer-half fs-1 mb-3"></i>
+          <h5>Clima</h5>
+          <p class="text-muted mb-0">
+            Evento al aire libre, llevá abrigo liviano
           </p>
         </div>
       </div>
 
-      <!-- CLIMA -->
-      <div class="col-md-4" data-aos="zoom-in">
-        <div class="card h-100 border-0 shadow-sm p-4 text-center rounded-4">
-          <div class="display-4 mb-3">🌤️</div>
-          <h5 class="fw-bold">Clima estimado</h5>
-          <p class="mb-1">Diciembre – Verano</p>
-          <p class="mb-1">Ceremonia al atardecer</p>
-          <p class="text-muted mt-2">
-            Calor durante el día, fresco por la noche
+      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="card h-100 border-0 shadow-sm p-4 text-center">
+          <i class="bi bi-stars fs-1 mb-3"></i>
+          <h5>Tip</h5>
+          <p class="text-muted mb-0">
+            Colores claros y telas cómodas
           </p>
         </div>
       </div>
@@ -150,7 +145,7 @@
 
     <!-- Título -->
     <div class="row text-center mb-5" data-aos="fade-up">
-      <h2 class="fw-bold">El gran día</h2>
+      <h2 class="fw-bold">Nos encontramos acá</h2>
       <p class="text-muted">Todo lo que necesitás saber ✨</p>
     </div>
 
@@ -162,9 +157,15 @@
           <div class="evento-icon mb-3">⛪</div>
           <h3 class="mb-3">Ceremonia</h3>
 
-          <p><strong>📍 Lugar:</strong><br>Iglesia San José</p>
-          <p><strong>🕒 Hora:</strong> 18:00 hs</p>
-          <p><strong>📅 Fecha:</strong><br>14 de Diciembre 2026</p>
+          <p class="d-flex justify-content-center gap-2">
+            <i class="bi bi-geo-alt"></i> Iglesia San José
+          </p>
+          <p class="d-flex justify-content-center gap-2">
+            <i class="bi bi-clock"></i> 18:00 hs
+          </p>
+          <p class="d-flex justify-content-center gap-2">
+          <i class="bi bi-calendar-event"></i>  14 de Diciembre 2026
+        </p>
 
           <a href="#mapa" class="btn btn-outline-dark btn-custom mt-3">
             Ver ubicación
@@ -178,9 +179,18 @@
           <div class="evento-icon mb-3">🥂</div>
           <h3 class="mb-3">Recepción</h3>
 
-          <p><strong>📍 Lugar:</strong><br>Estancia La Arboleda</p>
-          <p><strong>🕒 Hora:</strong> 20:30 hs</p>
-          <p><strong>🍽️ Cena y fiesta</strong></p>
+          <p class="d-flex justify-content-center gap-2">
+            <i class="bi bi-geo-alt"></i> Estancia La Arboleda
+          </p>
+          <p class="d-flex justify-content-center gap-2">
+            <i class="bi bi-clock"></i> 20:30 hs
+          </p>
+          <p class="d-flex justify-content-center gap-2">
+            <i class="bi bi-wine"></i>
+            <i class="bi bi-music-note-beamed"></i>
+            Cena & Fiesta
+          </p>
+
 
           <a href="#maparecepcion" class="btn btn-outline-dark btn-custom mt-3">
             Ver ubicación
@@ -196,7 +206,7 @@
   <div class="container">
 
     <div class="row text-center mb-4" data-aos="fade-up">
-      <h2 class="fw-bold">Cómo llegar a la ceremonia</h2>
+      <h2 class="fw-bold">Te dejamos el camino 💫 a la iglesia</h2>
       <p class="text-muted">Iglesia San José ⛪</p>
     </div>
 
@@ -235,7 +245,7 @@
   <div class="container">
 
     <div class="row text-center mb-4" data-aos="fade-up">
-      <h2 class="fw-bold">Cómo llegar a la recepción</h2>
+      <h2 class="fw-bold">Te dejamos el camino 💫 a la recepción</h2>
       <p class="text-muted">Estancia La Arboleda 🥂</p>
     </div>
 
@@ -405,12 +415,15 @@
 <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 
-<audio id="bgMusic" preload="auto" loop playsinline>
+<div id="musicControl" onclick="toggleMusic()">
+  <i id="musicIcon" class="fa-solid fa-play"></i>
+</div>
+
+<audio id="bgMusic" loop>
   <source src="./assets/music/tunetank-inspiring-cinematic-music-409347.mp3" type="audio/mpeg">
 </audio>
-<div id="musicControl" onclick="toggleMusic()">
-  🎵
-</div>
+
+
 
 <div id="galleryModal" class="gallery-modal">
   <span class="close-btn" onclick="closeGallery()">×</span>
