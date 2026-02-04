@@ -71,11 +71,12 @@
     </div>
   </div>
 </section>
-
-<section id="evento" class="py-5">
+<section id="evento" class="py-5 position-relative">
   <div class="container">
+
+    <!-- Título -->
     <div class="row text-center mb-5" data-aos="fade-up">
-      <h2>El gran día</h2>
+      <h2 class="fw-bold">El gran día</h2>
       <p class="text-muted">Todo lo que necesitás saber ✨</p>
     </div>
 
@@ -83,11 +84,14 @@
 
       <!-- CEREMONIA -->
       <div class="col-md-5" data-aos="fade-right">
-        <div class="card h-100 shadow-sm border-0 p-4 text-center">
+        <div class="card evento-card h-100 text-center p-4">
+          <div class="evento-icon mb-3">⛪</div>
           <h3 class="mb-3">Ceremonia</h3>
-          <p><strong>📍 Lugar:</strong> Iglesia San José</p>
+
+          <p><strong>📍 Lugar:</strong><br>Iglesia San José</p>
           <p><strong>🕒 Hora:</strong> 18:00 hs</p>
-          <p><strong>📅 Fecha:</strong> 14 de Diciembre 2026</p>
+          <p><strong>📅 Fecha:</strong><br>14 de Diciembre 2026</p>
+
           <a href="#mapa" class="btn btn-outline-dark btn-custom mt-3">
             Ver ubicación
           </a>
@@ -96,12 +100,15 @@
 
       <!-- RECEPCIÓN -->
       <div class="col-md-5" data-aos="fade-left">
-        <div class="card h-100 shadow-sm border-0 p-4 text-center">
+        <div class="card evento-card h-100 text-center p-4">
+          <div class="evento-icon mb-3">🥂</div>
           <h3 class="mb-3">Recepción</h3>
-          <p><strong>📍 Lugar:</strong> Estancia La Arboleda</p>
+
+          <p><strong>📍 Lugar:</strong><br>Estancia La Arboleda</p>
           <p><strong>🕒 Hora:</strong> 20:30 hs</p>
           <p><strong>🍽️ Cena y fiesta</strong></p>
-          <a href="#mapa" class="btn btn-outline-dark btn-custom mt-3">
+
+          <a href="#maparecepcion" class="btn btn-outline-dark btn-custom mt-3">
             Ver ubicación
           </a>
         </div>
@@ -113,39 +120,85 @@
 
 <section id="mapa" class="py-5 bg-light">
   <div class="container">
+
     <div class="row text-center mb-4" data-aos="fade-up">
-      <h2>¿Cómo llegar?</h2>
-      <p class="text-muted">Te esperamos 💕</p>
+      <h2 class="fw-bold">Cómo llegar a la ceremonia</h2>
+      <p class="text-muted">Iglesia San José ⛪</p>
     </div>
 
-    <div class="row justify-content-center" data-aos="fade-up">
+    <div class="row justify-content-center" data-aos="zoom-in">
       <div class="col-md-10">
-        <div class="ratio ratio-16x9 rounded shadow-sm overflow-hidden">
-          <iframe 
-            src="https://www.google.com/maps?q=Obelisco,Buenos+Aires&output=embed"
+
+        <div class="ratio ratio-16x9 rounded-4 shadow overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps?q=Iglesia+San+José+Buenos+Aires&output=embed"
             style="border:0;"
-            allowfullscreen=""
+            allowfullscreen
             loading="lazy">
           </iframe>
         </div>
 
         <div class="text-center mt-4">
-          <a href="https://www.google.com/maps?q=Obelisco,Buenos+Aires"
+          <a href="https://www.google.com/maps?q=Iglesia+San+José+Buenos+Aires"
              target="_blank"
              class="btn btn-dark btn-custom me-2">
-            Abrir en Google Maps
+            📍 Google Maps
           </a>
 
-          <a href="https://waze.com/ul?ll=-34.6037,-58.3816&navigate=yes"
+          <a href="https://waze.com/ul?q=Iglesia+San+José+Buenos+Aires&navigate=yes"
              target="_blank"
              class="btn btn-outline-dark btn-custom">
-            Abrir en Waze
+            🚗 Waze
           </a>
         </div>
+
       </div>
     </div>
   </div>
 </section>
+
+<section id="maparecepcion" class="py-5">
+  <div class="container">
+
+    <div class="row text-center mb-4" data-aos="fade-up">
+      <h2 class="fw-bold">Cómo llegar a la recepción</h2>
+      <p class="text-muted">Estancia La Arboleda 🥂</p>
+    </div>
+
+    <div class="row justify-content-center" data-aos="zoom-in">
+      <div class="col-md-10">
+
+        <div class="ratio ratio-16x9 rounded-4 shadow overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps?q=Estancia+La+Arboleda+Buenos+Aires&output=embed"
+            style="border:0;"
+            allowfullscreen
+            loading="lazy">
+          </iframe>
+        </div>
+
+        <div class="text-center mt-4">
+          <a href="https://www.google.com/maps?q=Estancia+La+Arboleda+Buenos+Aires"
+             target="_blank"
+             class="btn btn-dark btn-custom me-2">
+            📍 Google Maps
+          </a>
+
+          <a href="https://waze.com/ul?q=Estancia+La+Arboleda+Buenos+Aires&navigate=yes"
+             target="_blank"
+             class="btn btn-outline-dark btn-custom">
+            🚗 Waze
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
 <section id="galeria" class="py-5">
   <div class="container">
     <div class="row text-center mb-5" data-aos="fade-up">
@@ -155,32 +208,32 @@
 
     <div class="row g-3" data-aos="fade-up">
       <div class="col-6 col-md-4">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+        <img src="./assets/img/1.png"
              class="img-fluid galeria-img"
              onclick="openGallery(this.src)">
       </div>
       <div class="col-6 col-md-4">
-        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e"
+        <img src="./assets/img/2.png"
              class="img-fluid galeria-img"
              onclick="openGallery(this.src)">
       </div>
       <div class="col-6 col-md-4">
-        <img src="https://images.unsplash.com/photo-1529634899269-8a0b9d8a8c9f"
+        <img src="./assets/img/3.png"
              class="img-fluid galeria-img"
              onclick="openGallery(this.src)">
       </div>
       <div class="col-6 col-md-4">
-        <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9"
+        <img src="./assets/img/4.png"
              class="img-fluid galeria-img"
              onclick="openGallery(this.src)">
       </div>
       <div class="col-6 col-md-4">
-        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+        <img src="./assets/img/5.png"
              class="img-fluid galeria-img"
              onclick="openGallery(this.src)">
       </div>
       <div class="col-6 col-md-4">
-        <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330"
+        <img src="./assets/img/6.png"
              class="img-fluid galeria-img"
              onclick="openGallery(this.src)">
       </div>
