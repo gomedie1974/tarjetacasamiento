@@ -42,15 +42,20 @@
 </nav>
 
 <!-- HERO -->
-<section id="hero" class="d-flex align-items-center justify-content-center text-center">
-  <div class="hero-content" data-aos="fade-up">
+
+<section id="hero" class="hero-section d-flex align-items-center text-center">
+  <div class="overlay"></div>
+
+  <div class="container position-relative" data-aos="fade-up">
     <h1>Valeria & Diego</h1>
-    <p class="mt-3 fs-5">Nos casamos</p>
-    <p class="mb-4">14 de Diciembre de 2026</p>
+    <div class="divider"></div>
+    <p class="lead mt-3">Nos casamos ✨</p>
+    <p class="date">14 · Diciembre · 2026</p>
     <a href="#rsvp" class="btn btn-light btn-custom me-2">💌 Confirmar asistencia</a>
-    <a href="#mapa" class="btn btn-outline-light btn-custom">📍 Ver ubicación</a>
+    <a href="#mapas" class="btn btn-outline-light btn-custom">📍 Ver ubicación</a>
   </div>
 </section>
+
 
 <!-- COUNTDOWN -->
  
@@ -61,7 +66,7 @@
       <h2 class="fw-bold">Falta muy poco</h2>
       <p class="text-muted">Para celebrar juntos 💕</p>
     </div>
-
+    
     <div class="row justify-content-center g-3" data-aos="zoom-in">
 
       <div class="col-6 col-md-3">
@@ -139,6 +144,46 @@
   </div>
 </section>
 
+<section id="playlist" class="py-5 playlist-section">
+  <div class="container">
+
+    <div class="row text-center mb-4" data-aos="fade-up">
+      <div class="playlist-icon mb-3">
+        <i class="bi bi-music-note-beamed"></i>
+      </div>
+      <h2 class="fw-bold">Armemos juntos la playlist</h2>
+      <p class="text-muted">
+        Sumá esa canción que no puede faltar en la fiesta 💃🕺
+      </p>
+    </div>
+
+    <div class="row justify-content-center" data-aos="zoom-in">
+      <div class="col-md-8 text-center">
+
+        <p class="mb-4">
+          Queremos que la pista esté llena toda la noche.
+          Ayudanos sugiriendo la canción que te gustaría escuchar.
+        </p>
+
+        <a href="https://forms.gle/TU_FORMULARIO"
+           target="_blank"
+           class="btn btn-dark btn-custom me-2">
+          🎵 Sugerir canción
+        </a>
+
+        <a href="https://open.spotify.com/"
+           target="_blank"
+           class="btn btn-outline-dark btn-custom">
+          Ver playlist
+        </a>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
 
 <section id="evento" class="py-5 position-relative">
   <div class="container">
@@ -154,7 +199,10 @@
       <!-- CEREMONIA -->
       <div class="col-md-5" data-aos="fade-right">
         <div class="card evento-card h-100 text-center p-4">
-          <div class="evento-icon mb-3">⛪</div>
+          <div class="evento-icon mb-3">
+            <i class="bi bi-stars"></i>
+          </div>
+
           <h3 class="mb-3">Ceremonia</h3>
 
           <p class="d-flex justify-content-center gap-2">
@@ -167,7 +215,7 @@
           <i class="bi bi-calendar-event"></i>  14 de Diciembre 2026
         </p>
 
-          <a href="#mapa" class="btn btn-outline-dark btn-custom mt-3">
+          <a href="#mapas" class="btn btn-outline-dark btn-custom mt-3">
             Ver ubicación
           </a>
         </div>
@@ -176,7 +224,10 @@
       <!-- RECEPCIÓN -->
       <div class="col-md-5" data-aos="fade-left">
         <div class="card evento-card h-100 text-center p-4">
-          <div class="evento-icon mb-3">🥂</div>
+          <div class="evento-icon mb-3">
+            <i class="bi bi-stars"></i>
+          </div>
+
           <h3 class="mb-3">Recepción</h3>
 
           <p class="d-flex justify-content-center gap-2">
@@ -192,7 +243,7 @@
           </p>
 
 
-          <a href="#maparecepcion" class="btn btn-outline-dark btn-custom mt-3">
+          <a href="#mapas" class="btn btn-outline-dark btn-custom mt-3">
             Ver ubicación
           </a>
         </div>
@@ -201,85 +252,87 @@
     </div>
   </div>
 </section>
-
-<section id="mapa" class="py-5 bg-light">
+<section id="mapas" class="py-5 bg-light">
   <div class="container">
 
-    <div class="row text-center mb-4" data-aos="fade-up">
-      <h2 class="fw-bold">Te dejamos el camino 💫 a la iglesia</h2>
-      <p class="text-muted">Iglesia San José ⛪</p>
+    <!-- TÍTULO GENERAL -->
+    <div class="row text-center mb-5" data-aos="fade-up">
+      <h2 class="fw-bold">Te dejamos el camino 💫</h2>
+      <p class="text-muted">Para que llegues sin vueltas 💕</p>
     </div>
 
-    <div class="row justify-content-center" data-aos="zoom-in">
-      <div class="col-md-10">
+    <div class="row g-4">
 
-        <div class="ratio ratio-16x9 rounded-4 shadow overflow-hidden">
-          <iframe
-            src="https://www.google.com/maps?q=Iglesia+San+José+Buenos+Aires&output=embed"
-            style="border:0;"
-            allowfullscreen
-            loading="lazy">
-          </iframe>
+      <!-- MAPA CEREMONIA -->
+      <div class="col-md-6" data-aos="fade-right">
+        <div  class="card h-100 p-3 border-0 shadow rounded-4 text-center">
+
+          <h4 class=" mb-2">Ceremonia   <i class="bi bi-stars"></i></h4>
+          <p class="text-muted">Iglesia San José</p>
+
+          <div class="ratio ratio-16x9 rounded-4 overflow-hidden mb-3">
+            <iframe
+              src="https://www.google.com/maps?q=Iglesia+San+José+Buenos+Aires&output=embed"
+              style="border:0;"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <div>
+            <a href="https://www.google.com/maps?q=Iglesia+San+José+Buenos+Aires"
+               target="_blank"
+               class="btn btn-dark btn-custom me-2">
+              📍 Google Maps
+            </a>
+
+            <a href="https://waze.com/ul?q=Iglesia+San+José+Buenos+Aires&navigate=yes"
+               target="_blank"
+               class="btn btn-outline-dark btn-custom">
+              🚗 Waze
+            </a>
+          </div>
+
         </div>
-
-        <div class="text-center mt-4">
-          <a href="https://www.google.com/maps?q=Iglesia+San+José+Buenos+Aires"
-             target="_blank"
-             class="btn btn-dark btn-custom me-2">
-            📍 Google Maps
-          </a>
-
-          <a href="https://waze.com/ul?q=Iglesia+San+José+Buenos+Aires&navigate=yes"
-             target="_blank"
-             class="btn btn-outline-dark btn-custom">
-            🚗 Waze
-          </a>
-        </div>
-
       </div>
+
+      <!-- MAPA RECEPCIÓN -->
+      <div class="col-md-6" data-aos="fade-left">
+        <div class="card h-100 p-3 border-0 shadow rounded-4 text-center">
+
+          <h4 class="mb-2">Recepción <i class="bi bi-stars"></i></h4>
+  
+          <p class="text-muted">Estancia La Arboleda</p>
+
+          <div class="ratio ratio-16x9 rounded-4 overflow-hidden mb-3">
+            <iframe
+              src="https://www.google.com/maps?q=Estancia+La+Arboleda+Buenos+Aires&output=embed"
+              style="border:0;"
+              allowfullscreen
+              loading="lazy">
+            </iframe>
+          </div>
+
+          <div>
+            <a href="https://www.google.com/maps?q=Estancia+La+Arboleda+Buenos+Aires"
+               target="_blank"
+               class="btn btn-dark btn-custom me-2">
+              📍 Google Maps
+            </a>
+
+            <a href="https://waze.com/ul?q=Estancia+La+Arboleda+Buenos+Aires&navigate=yes"
+               target="_blank"
+               class="btn btn-outline-dark btn-custom">
+              🚗 Waze
+            </a>
+          </div>
+
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
-
-<section id="maparecepcion" class="py-5">
-  <div class="container">
-
-    <div class="row text-center mb-4" data-aos="fade-up">
-      <h2 class="fw-bold">Te dejamos el camino 💫 a la recepción</h2>
-      <p class="text-muted">Estancia La Arboleda 🥂</p>
-    </div>
-
-    <div class="row justify-content-center" data-aos="zoom-in">
-      <div class="col-md-10">
-
-        <div class="ratio ratio-16x9 rounded-4 shadow overflow-hidden">
-          <iframe
-            src="https://www.google.com/maps?q=Estancia+La+Arboleda+Buenos+Aires&output=embed"
-            style="border:0;"
-            allowfullscreen
-            loading="lazy">
-          </iframe>
-        </div>
-
-        <div class="text-center mt-4">
-          <a href="https://www.google.com/maps?q=Estancia+La+Arboleda+Buenos+Aires"
-             target="_blank"
-             class="btn btn-dark btn-custom me-2">
-            📍 Google Maps
-          </a>
-
-          <a href="https://waze.com/ul?q=Estancia+La+Arboleda+Buenos+Aires&navigate=yes"
-             target="_blank"
-             class="btn btn-outline-dark btn-custom">
-            🚗 Waze
-          </a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
 
 
 
